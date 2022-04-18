@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page</title>
+        <link href="./css/styles.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono&family=Vujahday+Script&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <!--Nav bar-->
+        <div class="navbar-container">
+            <ul id="navbar">
+                <li><a href="#homeId">Home</a></li>
+                <li><a href="#grid2">About Me</a></li>
+                <li><a href="#Contact-Me">Contact Me</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </div>
+
+    
+        <!--Home section-->
+        <div class="home" id="homeId">
+                <p class="heading1">Welcome To My Page</p><br/><br/>
+                <p class="para1">>>> I am an engineer who likes coding and software development.<br/><br/>
+                    >>> Here I want to show my collection of Modern Indian Art.
+                </p>
+        </div>
+
+        <!--About Me and Contact Me-->
+        <br/>
+        <div class="grid-2" id="grid2">
+            <div id="About-Me">
+                <h1>About Me</h1>
+                <ul>
+                    <li> My name is <b>Madhupriya</b>, age 20.</li>
+                    <li> I am a computer science engineer studied at MVSR Engineering College.</li>
+                    <li> I love the internet, technology.</li>
+                    <li> I am currently working as Intern at Zemoso Technologies.</li>
+                    <li> I'm from Hyderabad, Telangana.</li>
+                    <li> My favorite hobby is building things on the internet like ecommerce sites, watching movies and web series.<br/></li>
+                </ul>
+ 
+                <!-- hidden fram to redirect to same page after form submission-->
+                <iframe name="hiddenFrame" class="hide"></iframe>
+                
+            </div>
+            <div id="Contact-Me">
+                <h1>Contact Me</h1><br/>
+                <div id="form">
+                    <form method="post" target="hiddenFrame">
+                        <input type="text" id="name" placeholder="Enter your name" value=""/>
+                        <input type="email"  id="email" placeholder="Enter your mail id" value="" />
+                        <textarea id="message" placeholder="Enter your message" value=""></textarea>
+                        <button onclick="return (validate())?accepted():denied();">submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!--Gallery section-->
+        <br/>
+        <br/>
+        <div class="gallery-container" id="gallery">
+            <h1>My Gallery</h1>
+            <h3>some of the famous paintings of India</h3>
+            <div id="gallery-grid">
+            </div>
+        </div>
+
+        <script src="./json/data.js"></script>
+        <script src="./js/scripts.js"></script>
+        
+    </body>
+</html>
